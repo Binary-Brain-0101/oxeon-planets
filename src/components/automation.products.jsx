@@ -1,28 +1,15 @@
 import React from "react";
 // import "./app.css";
 
-function Home() {
+function AutomationProducts() {
     return (
         <div className="container">
+          
             <div className="row">
                 <div className="col">
-                    <h1 className="text-center">Welcome to Oxeon service</h1>
-                    <p style={{textAlign: "justify"}}>
-                        Introducing Oxeon Service: Your Trusted Partner for CCTV Security, Networking, Biometrics, and
-                        Automation Installation, a leading provider of comprehensive security, networking, and
-                        automation solutions. With our expertise in CCTV security, networking, biometrics, and
-                        automation installation, we are committed to delivering high-quality services tailored to meet
-                        the unique needs of our valued clients. At Oxeon Service, we understand the importance of
-                        safeguarding your assets, ensuring the safety of your premises, and optimizing your operational
-                        efficiency. With years of experience in the industry, we have built a solid reputation for
-                        delivering innovative, reliable, and cost-effective solutions that exceed expectations.
-                    </p>
-                </div>
-            </div>
-
-            <div className="row">
-                <div className="col">
-                    <h2>Featured Products</h2>
+                    <h2>
+                        Automation & Biometrics
+                    </h2>
                 </div>
             </div>
 
@@ -88,4 +75,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default AutomationProducts;

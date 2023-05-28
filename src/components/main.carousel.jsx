@@ -42,42 +42,42 @@ const MainCarousel = () => {
         <div className="carousel-image">
           <img
             className="d-block carousel-image"
-            src={"/images/carousel/s1.jpg"}
+            src={"/images/carousel/card1.jpg"}
             alt="First slide"
           />
         </div>
         <div className="carousel-image">
           <img
             className="d-block carousel-image"
-            src={"/images/carousel/s2.jpg"}
+            src={"/images/carousel/2.jpg"}
             alt="Second slide"
           />
         </div>
         <div className="carousel-image">
           <img
             className="d-block carousel-image"
-            src={"/images/carousel/s3.jpg"}
+            src={"/images/carousel/3.jpg"}
             alt="Third slide"
           />
         </div>
         <div className="carousel-image">
           <img
             className="d-block carousel-image"
-            src={"/images/carousel/s4.jpg"}
+            src={"/images/carousel/card3.jpg"}
             alt="Fourth slide"
           />
         </div>
         <div className="carousel-image">
           <img
             className="d-block carousel-image"
-            src={"/images/carousel/s5.jpg"}
+            src={"/images/carousel/5.jpg"}
             alt="Fifth slide"
           />
         </div>
         <div className="carousel-image">
           <img
             className="d-block carousel-image"
-            src={"/images/carousel/s6.jpg"}
+            src={"/images/carousel/6.jpg"}
             alt="Sixth slide"
           />
         </div>

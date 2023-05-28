@@ -26,7 +26,9 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 2rem;
-  color: #4bbd44;
+  color: #1f4888;
+
+  /* color: #4bbd44; */
 }
 
 h2 {
@@ -75,19 +77,19 @@ li {
 /* Dark theme footer */
 footer {
   background-color: #0b0202;
-  color: #291a1a;
+  color: #e7e2e2;
 }
 
 footer h5 {
-  color: #1a0404;
+  color: #f5f2f2;
 }
 
 footer p {
-  color: #0f0202;
+  color: #ffffff;
 }
 
 footer a {
-  color: #0a0202;
+  color: #f1eded;
   text-decoration: none;
 }
 
@@ -97,5 +99,5 @@ footer a:hover {
 
 footer .p-3 {
   background-color: rgba(0, 0, 0, 0.2);
-  color: #200a0a;
+  color: #fbf6f6;
 }

@@ -1,69 +1,100 @@
 import React, { useState } from "react";
 
-const ProductInquiryModal = () => {
+const EnquiryModal = () => {
   const [showModal, setShowModal] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Perform your form submission logic here
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
-
-    // Reset form fields and close the modal
-    setName("");
-    setEmail("");
-    setMessage("");
-    setShowModal(false);
+    console.log(formData);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+    handleClose();
   };
 
   return (
-    <div>
-      <button onClick={() => setShowModal(true)}>Enquire Now</button>
+    <>
+      <button className="btn btn-primary" onClick={handleShow}>
+        Contact Us
+      </button>
 
       {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <h2>Product Inquiry</h2>
-            <form onSubmit={handleSubmit}>
-              <label>
-                Name:
-                <input
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
-              </label>
-              <label>
-                Email:
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </label>
-              <label>
-                Message:
-                <textarea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                ></textarea>
-              </label>
-              <button type="submit">Submit</button>
-            </form>
-            <button onClick={() => setShowModal(false)}>Close</button>
+        <div className="modal fade" tabIndex="-1" role="dialog" style={{ display: "block" }}>
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Enquiry Form</h5>
+                <button type="button" className="close" onClick={handleClose}>
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <form onSubmit={handleSubmit}>
+                  <div className="form-group">
+                    <label htmlFor="name">Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Enter your name"
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Enter your email"
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                      className="form-control"
+                      id="message"
+                      name="message"
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Enter your message"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" className="btn btn-primary">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
-export default ProductInquiryModal;
+export default EnquiryModal;

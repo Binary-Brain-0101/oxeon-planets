@@ -1,0 +1,24 @@
+.about-us-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .company-details-container {
+    flex: 1;
+    padding: 20px;
+    /* Add additional styling for the about us content and details */
+  }
+  
+  .india-map-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  .india-map-container img {
+    max-width: 100%;
+    /* Add additional styling for the image if needed */
+  }
+  

@@ -4,7 +4,7 @@ import "../App.css"
 
 const Footer = () => {
   return (
-    <footer className="bg-light text-center text-lg-start " >
+    <footer className="text-center text-lg-start " >
       <div className="container p-4" >
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">

@@ -4,19 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css';
 import App from './App';
-import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
-// import Shop from './pages/Shop';
-import Contact from './pages/Contact';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    {/* <Home/> */}
-    {/* <Shop/> */}
-    {/* <Contact/> */}
+
   </React.StrictMode>
 );
 
