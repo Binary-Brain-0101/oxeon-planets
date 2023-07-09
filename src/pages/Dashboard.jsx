@@ -13,6 +13,7 @@ import AutomationProducts from "../components/automation.products";
 import NetworkProducts from "../components/networking.products";
 import ServiceList from "../components/service.list";
 import AboutUsPage from "./About";
+import ServicePage from "./Services";
 
 
 function Dashboard() {
@@ -24,9 +25,9 @@ function Dashboard() {
             <CctvProducts/>
             <AutomationProducts/>
             <NetworkProducts/>
-            <ServiceList/>
+            {/* <ServicePage/> */}
+            {/* <ServiceList/> */}
             <AboutUsPage/>
-    
             <Sidebar />
             {/* <Contact/> */}
             <Footer />
@@ -35,3 +36,22 @@ function Dashboard() {
 }
 
 export default Dashboard;
+// function Dashboard() {
+//     return (
+//       <div>
+//         <Navbar />
+//         <MainCarousel />
+//         {/* Other components */}
+//         <Router>
+//           {/* Other routes */}
+//           <Route path="/services">
+//             <ServiceList />
+//           </Route>
+//         </Router>
+//         {/* Other components */}
+//         <Footer />
+//       </div>
+//     );
+//   }
+  
+//   export default Dashboard;

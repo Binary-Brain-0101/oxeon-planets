@@ -13,7 +13,7 @@ function NetworkProducts() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row" style={{textAlign: "justify"}}>
                 <div className="col-md-3">
                     <div className="card featured-image">
                         <img className="card-img-top" src="/images/products/cctv/analog cam.png" alt="Analog camera" />
@@ -24,7 +24,7 @@ function NetworkProducts() {
                                 information about the model and its capabilities.
                             </p>
                         </div>
-                        <div className="caption">Price: $1000</div>
+                       
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ function NetworkProducts() {
                                 information about the model and its capabilities.
                             </p>
                         </div>
-                        <div className="caption">Price: $1000</div>
+                    
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@ function NetworkProducts() {
                                 information about the model and its capabilities.
                             </p>
                         </div>
-                        <div className="caption">Price: $1000</div>
+                       
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ function NetworkProducts() {
                                 information about the model and its capabilities.
                             </p>
                         </div>
-                        <div className="caption">Price: $1000</div>
+                
                     </div>
                 </div>
             </div>
