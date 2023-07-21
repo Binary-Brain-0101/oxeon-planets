@@ -16,12 +16,11 @@ function NetworkProducts() {
             <div className="row" style={{textAlign: "justify"}}>
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/analog cam.png" alt="Analog camera" />
+                        <img className="card-img-top" src="/images/products/network/cslab.jpg" alt="Analog camera" />
                         <div className="card-body">
-                            <h5 className="card-title">Analog camera</h5>
+                            <h5 className="card-title">Custom system solution</h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Tailored setup of computer labs for specific needs and requirements.
                             </p>
                         </div>
                        
@@ -30,12 +29,11 @@ function NetworkProducts() {
 
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/network cam.png" alt="Network camera" />
+                        <img className="card-img-top" src="/images/products/network/sc.jpg" alt="Network camera" />
                         <div className="card-body">
-                            <h5 className="card-title">Network camera</h5>
+                            <h5 className="card-title">Smart class & rooms </h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Integration of technology in classrooms for interactive and modern teaching experiences.
                             </p>
                         </div>
                     
@@ -44,12 +42,11 @@ function NetworkProducts() {
 
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/dvr.png" alt="DVR" />
+                        <img className="card-img-top" src="/images/products/network/server.jpg" alt="DVR" />
                         <div className="card-body">
-                            <h5 className="card-title">Digital Video Recorder</h5>
+                            <h5 className="card-title">Small scale server setups</h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Installation of servers for small business or personal use.
                             </p>
                         </div>
                        
@@ -58,12 +55,11 @@ function NetworkProducts() {
 
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/ptz cam.png" alt="PTZ camera" />
+                        <img className="card-img-top" src="/images/products/network/route.png" alt="PTZ camera" />
                         <div className="card-body">
-                            <h5 className="card-title">PTZ camera</h5>
+                            <h5 className="card-title">Networking and routing solutions</h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Implementing network infrastructure for efficient data transfer and communication.
                             </p>
                         </div>
                 

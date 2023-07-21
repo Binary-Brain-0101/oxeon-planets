@@ -13,8 +13,8 @@ const Footer = () => {
               Oxeon service
             </p>
             <p>www.oxeonservice.com</p>
-            <p>reach@oxeonservice.com</p>
-            <p>+91 6366611286</p>
+            <p>info@oxeonservice.com</p>
+            <p>+91 6366611286, +91 9880226572</p>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Addresses</h5>
@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="row ">
           <div className="col mt-3 ">
             <ul className="list-inline social-media-buttons ">
-              <li className="list-inline-item pe-2">
+              <li className="list-inline-item pe-2" >
               <SocialIcon url="https://facebook.com" />
               </li>
               <li className="list-inline-item pe-2">
@@ -58,8 +58,8 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-        &copy; {new Date().getFullYear()} Oxeon Service. All rights reserved.
+      <div className="text-center p-3" style={{ backgroundColor: "rgba(100, 0, 100, 0.5)" }}>
+        &copy; {new Date().getFullYear()} oxeonservice. All rights reserved.
         
       </div>
     </footer>

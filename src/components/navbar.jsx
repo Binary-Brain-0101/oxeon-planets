@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {Modal} from "react-bootstrap";
 // import {Link} from "react-router-dom";
 import "../App.css";
 
@@ -21,25 +22,33 @@ const Navbar = () => {
     const calculateNavbarColor = () => {
         const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercentage = (scrollPosition / maxScroll) * 100;
-        const intensity = Math.floor(scrollPercentage / 10); // Adjust the value based on the desired intensity scale
+        const intensity = Math.floor(scrollPercentage / 10); 
         const colorScale = [
-            "#ffffff", // 0% - white
-            "#f2f2f2",
-            "#e6e6e6",
-            "#d9d9d9",
-            "#cccccc",
-            "#bfbfbf",
-            "#b3b3b3",
-            "#a6a6a6",
-            "#999999",
-            "#8c8c8c", // 90% - dark grey
-            "#000000" // 100% - black
+            "#ffffff",
+            "#ffffff", 
+            "#e6f7ff",
+            "#e6f7ff",
+            "#e6f7ff",
+            "#cceeff",
+            "#cceeff",
+            "#cceeff",
+            "#b3e6ff",
+            "#b3e6ff",
+            "#b3e6ff",
           ];
           
 
         return colorScale[intensity];
     };
+    const [showModal, setShowModal] = useState(false);
 
+    const handleContactClick = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
     const navbarColor = calculateNavbarColor();
 
     return (
@@ -82,13 +91,24 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#" onClick={handleContactClick}>
                                 Contact
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <Modal show={showModal} onHide={handleCloseModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Contact Details</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    {/* Add your contact details here */}
+                    Phone: +91 6366611286, +91 9880226572
+                    <br />
+                    Email: info@oxeonservice.com
+                </Modal.Body>
+            </Modal>
         </nav>
     );
 };

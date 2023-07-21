@@ -21,9 +21,7 @@ function CctvProducts() {
             <div className="card-body">
               <h5 className="card-title">Analog camera</h5>
               <p className="card-text">
-                This is a brief description of the featured AI model. It can be
-                used to provide more information about the model and its
-                capabilities.
+              Traditional video camera capturing continuous analog signals for surveillance and monitoring purposes.
               </p>
             </div>
           </div>
@@ -39,9 +37,7 @@ function CctvProducts() {
             <div className="card-body">
               <h5 className="card-title">Network camera</h5>
               <p className="card-text">
-                This is a brief description of the featured AI model. It can be
-                used to provide more information about the model and its
-                capabilities.
+              IP-based camera that transmits video and audio data over a network for remote monitoring.
               </p>
             </div>
             
@@ -59,9 +55,7 @@ function CctvProducts() {
             <div className="card-body">
               <h5 className="card-title">Digital Video Recorder</h5>
               <p className="card-text">
-                This is a brief description of the featured AI model. It can be
-                used to provide more information about the model and its
-                capabilities.
+              Devices that store and manage video footage from cameras, either on a physical recorder or network video recorder (NVR).
               </p>
             </div>
 
@@ -78,9 +72,7 @@ function CctvProducts() {
             <div className="card-body">
               <h5 className="card-title">PTZ camera</h5>
               <p className="card-text">
-                This is a brief description of the featured AI model. It can be
-                used to provide more information about the model and its
-                capabilities.
+              PTZ cameras can Pan, Tilt, and Zoom, while 360 cameras offer a full view in all directions.
               </p>
             </div>
          

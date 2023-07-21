@@ -3,7 +3,7 @@ import "../css/About.css";
 
 const AboutUsPage = () => {
     return (
-        <div className="about-us-page ms-5 me-5">
+        <div className="about-us-page">
             <div className="company-details-container" style={{textAlign: "justify"}}>
                 <h1>About Oxeon Service</h1>
                 <p >
@@ -35,15 +35,7 @@ const AboutUsPage = () => {
                     and mutual success.
                 </p>
             </div>
-            {/* <div className="contact-info-container">
-        <h2>Contact Information</h2>
-        <p>Address: 123 Main Street, City, State, Country</p>
-        <p>Phone: +1 234-567-8901</p>
-        <p>Email: info@oxeonservice.com</p>
-      </div> */}
-      {/* <div className="india-map-container">
-        <img src="/images/map.png" alt="Map" />
-      </div> */}
+           
     </div>
   );
 };

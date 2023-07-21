@@ -27,8 +27,8 @@ function Dashboard() {
             <NetworkProducts/>
             {/* <ServicePage/> */}
             {/* <ServiceList/> */}
-            <AboutUsPage/>
-            <Sidebar />
+            <AboutUsPage />
+            {/* <Sidebar /> */}
             {/* <Contact/> */}
             <Footer />
         </div>

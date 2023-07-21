@@ -16,12 +16,11 @@ function AutomationProducts() {
             <div className="row" style={{textAlign: "justify"}}>
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/analog cam.png" alt="Analog camera" />
+                        <img className="card-img-top" src="/images/products/automation/fr.jpg" alt="Analog camera" />
                         <div className="card-body">
-                            <h5 className="card-title">Analog camera</h5>
+                            <h5 className="card-title">Face recognition</h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Biometric technology that grants access based on facial features, enhancing security.
                             </p>
                         </div>
                       
@@ -30,12 +29,11 @@ function AutomationProducts() {
 
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/network cam.png" alt="Network camera" />
+                        <img className="card-img-top" src="/images/products/automation/fp.jpeg" alt="Network camera" />
                         <div className="card-body">
-                            <h5 className="card-title">Network camera</h5>
+                            <h5 className="card-title">Biometric access control</h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Uses unique physical traits like fingerprints for secure access control.
                             </p>
                         </div>
                     </div>
@@ -43,12 +41,11 @@ function AutomationProducts() {
 
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/dvr.png" alt="DVR" />
+                        <img className="card-img-top" src="/images/products/automation/office.jpg" alt="DVR" />
                         <div className="card-body">
-                            <h5 className="card-title">Digital Video Recorder</h5>
+                            <h5 className="card-title">Smart home & office</h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Integrated technology for automated control and management of devices in homes and offices.
                             </p>
                         </div>
                        
@@ -57,12 +54,11 @@ function AutomationProducts() {
 
                 <div className="col-md-3">
                     <div className="card featured-image">
-                        <img className="card-img-top" src="/images/products/cctv/ptz cam.png" alt="PTZ camera" />
+                        <img className="card-img-top" src="/images/products/automation/door.jpg" alt="PTZ camera" />
                         <div className="card-body">
-                            <h5 className="card-title">PTZ camera</h5>
+                            <h5 className="card-title">Video intercoms</h5>
                             <p className="card-text">
-                                This is a brief description of the featured AI model. It can be used to provide more
-                                information about the model and its capabilities.
+                            Two-way communication system with video and audio to remotely identify and communicate with visitors.
                             </p>
                         </div>
                   
