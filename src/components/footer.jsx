@@ -1,67 +1,141 @@
-import React from "react";
-import { SocialIcon } from 'react-social-icons';
-import "../App.css"
+import React, { useState } from "react";
+import Modal from "react-modal";
+import "../App.css";
+import "../css/Footer.css";
+
+// Set the app element for accessibility
+Modal.setAppElement("#root");
 
 const Footer = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+  const [modalTitle, setModalTitle] = useState("");
+  const [buttonLink, setButtonLink] = useState("");
+
+  const openModal = (image, title, link) => {
+    setModalImage(image);
+    setModalTitle(title);
+    setButtonLink(link);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => setModalIsOpen(false);
+
+  // Handlers for social media clicks
+  // const handleFacebookClick = (e) => {
+  //   e.preventDefault();
+  //   openModal(
+  //     "/images/hw_insta.jpg",
+  //     "Follow us on Facebook",
+  //     "https://facebook.com/your-page"
+  //   );
+  // };
+
+  const handleInstagramClick = (e) => {
+    e.preventDefault();
+    openModal(
+      "/images/hw_insta.jpg",
+      "Follow us on Instagram",
+      "https://instagram.com/your-profile"
+    );
+  };
+
+  const handleWhatsAppClick = (e) => {
+    e.preventDefault();
+    openModal(
+      "/images/whatsapp.jpg",
+      "Contact us on WhatsApp",
+      "https://wa.me/your-number"
+    );
+  };
+
   return (
-    <footer className="text-center text-lg-start " >
-      <div className="container p-4" >
+    <footer className="text-center text-lg-start">
+      <div className="container p-4">
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Company Details</h5>
-            <p>
-              Oxeon service
-            </p>
-            <p>www.oxeonservice.com</p>
-            <p>info@oxeonservice.com</p>
-            <p>+91 6366611286, +91 9880226572</p>
+            <p>Hello-World</p>
+            <p>www.hello-world.solutions</p>
+            <p>helloworldsolutions2024@gmail.com</p>
+            <p>+91 9072581421, +91 8075749351</p>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Addresses</h5>
-            <p>
-              East End Main Road, NAL Layout
-            </p>
-            <p>4th T Block, Thilak Nagar, Jaya Nagar</p>
-            <p>Bangalore, 29-Karnataka</p>
+            <p>Hello-world</p>
+            <p>60/44, 3rd floor, JC Chambers</p>
+            <p>Eranakulam-682036, Kerala</p>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Social</h5>
 
-            <div className="row ">
-          <div className="col mt-3 ">
-            <ul className="list-inline social-media-buttons ">
-              <li className="list-inline-item pe-2" >
-              <SocialIcon url="https://facebook.com" />
-              </li>
-              <li className="list-inline-item pe-2">
-              <SocialIcon url="https://instagram.com" />
-              </li>
-              <li className="list-inline-item pe-2">
-              <SocialIcon url="https://twitter.com" />
-              </li>
-              <li className="list-inline-item pe-2">
-              <SocialIcon url="https://linkedin.com" />
-              </li>
-              <li className="list-inline-item pe-2">
-              <SocialIcon url="https://whatsapp.com" />
-              </li>
-              <li className="list-inline-item">
-              <SocialIcon url="https://youtube.com" />
-              </li>
-            </ul>
-          </div>
-          <div className="p-2">
-          <img src={"/images/BW_logo.png"} alt="Oxeon Service" width={"90%"} style={{ backgroundColor: 'transparent' }}/>
+            <div className="row">
+              <div className="col mt-3">
+                <ul className="list-inline social-media-buttons">
+                  {/* <li className="list-inline-item pe-2">
+                    <a
+                      href="/"
+                      onClick={handleFacebookClick}
+                    >
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                  </li> */}
+                  <li className="list-inline-item pe-2">
+                    <a
+                      href="/"
+                      onClick={handleInstagramClick}
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li className="list-inline-item pe-2">
+                    <a href="/" onClick={handleWhatsAppClick}>
+                      <i className="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-2">
+                <img
+                  src={"/images/LogoGold.png"}
+                  alt="Hello-world"
+                  width={"60%"}
+                  style={{ backgroundColor: "transparent" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
-          </div>
+      </div>
+      <div
+        className="text-center p-3"
+
+      >
+        &copy; {new Date().getFullYear()} hello-world. All rights reserved.
+      </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel={modalTitle}
+        className="modal-footer"
+        overlayClassName="modal-overlay-footer"
+      >
+        <button onClick={closeModal} className="modal-close-button-footer">
+        <i className="fas fa-times"></i>
+        </button>
+        <img src={modalImage} alt={modalTitle} className="modal-image-footer" />
+        <div className="text-center mt-3">
+          <a
+            href={buttonLink}
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow Us
+          </a>
         </div>
-        
-      </div>
-      <div className="text-center p-3" style={{ backgroundColor: "rgba(100, 0, 100, 0.5)" }}>
-        &copy; {new Date().getFullYear()} oxeonservice. All rights reserved.
-        
-      </div>
+      </Modal>
     </footer>
   );
 };

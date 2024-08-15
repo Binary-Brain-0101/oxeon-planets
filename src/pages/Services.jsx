@@ -1,64 +1,45 @@
-import React, { useState } from "react";
-// import "./app.css";
+import React from "react";
+import FeatureSection from "../components/FeatureSection";
 
-function CardComponent({ image, title, content }) {
-  const [isExpanded, setExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setExpanded(true);
-  };
-  const toggleExpand2 = () => {
-    setExpanded(false);
-  };
-
-  return (
-    <div className={`card ${isExpanded ? "expanded" : ""}`} onMouseEnter={toggleExpand} onMouseLeave={toggleExpand2}>
-      <img className="card-img-top" src={image} alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        {isExpanded && <p className="card-text">{content}</p>}
-      </div>
-    </div>
-  );
-}
 
 function ServicePage() {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col">
-          <h2>Our Services</h2>
-        </div>
-      </div>
 
       <div className="row" style={{ textAlign: "justify" }}>
-        <div className="col-md-3">
-          <CardComponent
-            image="/images/products/cctv/cam1.jpg"
-            title="CCTV security system"
-          />
-        </div>
-
-        <div className="col-md-3">
-          <CardComponent
-            image="/images/products/cctv/cam2.jpg"
-            title="Automation & Biometrics"
-          />
-        </div>
-
-        <div className="col-md-3">
-          <CardComponent
-            image="/images/products/cctv/cam3.jpg"
-            title="Computer Systems & Networking"
-          />
-        </div>
-
-        <div className="col-md-3">
-          <CardComponent
-            image="/images/products/cctv/ptz cam.png"
-            title="Services & installtion"
-          />
-        </div>
+      <FeatureSection
+        title="Innovative Web Development."
+        description="Whether you’re a startup looking to make your mark or an established enterprise seeking a digital revamp, our web development services are scalable to meet your specific requirements. We offer custom web design solutions that match your business goals, making your website a powerful tool for growth and success online."
+        features={[
+          "Providing service all over India & Abroad",
+          "24/7 Available for customer support",
+        ]}
+        buttonText="Get Started"
+        imageUrl="/images/carousel/2.jpg"
+        imageLeft={false} 
+      />
+        <FeatureSection
+        title="Advanced CCTV Solutions"
+        description="Experience unparalleled peace of mind with our cutting-edge CCTV camera services. We offer comprehensive surveillance solutions tailored to meet your specific needs, from high-definition video capture to real-time monitoring and advanced analytics. Our expert team ensures seamless installation, optimal performance, and ongoing support to keep your property safe and secure. Trust us to provide the latest technology and exceptional service for all your security needs."
+        features={[
+          "Providing service all over India & Abroad",
+          "24/7 Available for customer support",
+        ]}
+        buttonText="Get Quote"
+        imageUrl="/images/carousel/3.jpg"
+        imageLeft={true}
+      />
+       <FeatureSection
+        title="Smart Automation Solutions."
+        description="Elevate your environment with our state-of-the-art automation services. We specialize in integrating advanced biometric systems, access control, and alarm solutions for both residential and commercial spaces. Our custom automation services are designed to streamline your daily routines and enhance security with cutting-edge technology. Whether you need sophisticated access management, intuitive alarm systems, or personalized automation for your home or office, our expert team delivers tailored solutions that offer convenience, safety, and efficiency. Experience the future of smart living with our comprehensive automation solutions."
+        features={[
+          "Providing service all over India & Abroad",
+          "24/7 Available for customer support",
+        ]}
+        buttonText="Get Started"
+        imageUrl="/images/carousel/1.jpg"
+        imageLeft={false}
+      />
       </div>
     </div>
   );

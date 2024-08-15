@@ -1,10 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import "./MainCarousel.css"; 
 import "../css/carousel.css";
-
-
 
 const MainCarousel = () => {
   const responsive = {
@@ -22,6 +19,18 @@ const MainCarousel = () => {
     },
   };
 
+  // Array of image filenames (from the public/images/carousel directory)
+  const imageFilenames = [
+    "2.jpg",
+    "3.jpg",
+    "5.jpg",
+    "6.jpg"
+    // "hw_bio.jpg",
+    // "hw_cctv.jpg",
+    // "hw_web.jpg",
+    // "hw_cctv1.jpg"
+  ];
+
   return (
     <div className="carousel-container">
       <Carousel
@@ -31,7 +40,7 @@ const MainCarousel = () => {
         showDots={true}
         autoPlay={true}
         infinite={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={2000}
         keyBoardControl={true}
         customTransition="all .5s"
         transitionDuration={500}
@@ -39,48 +48,15 @@ const MainCarousel = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        <div className="carousel-image">
-          <img
-            className="d-block carousel-image"
-            src={"/images/carousel/card1.jpg"}
-            alt="First slide"
-          />
-        </div>
-        <div className="carousel-image">
-          <img
-            className="d-block carousel-image"
-            src={"/images/carousel/2.jpg"}
-            alt="Second slide"
-          />
-        </div>
-        <div className="carousel-image">
-          <img
-            className="d-block carousel-image"
-            src={"/images/carousel/3.jpg"}
-            alt="Third slide"
-          />
-        </div>
-        <div className="carousel-image">
-          <img
-            className="d-block carousel-image"
-            src={"/images/carousel/card3.jpg"}
-            alt="Fourth slide"
-          />
-        </div>
-        <div className="carousel-image">
-          <img
-            className="d-block carousel-image"
-            src={"/images/carousel/5.jpg"}
-            alt="Fifth slide"
-          />
-        </div>
-        <div className="carousel-image">
-          <img
-            className="d-block carousel-image"
-            src={"/images/carousel/6.jpg"}
-            alt="Sixth slide"
-          />
-        </div>
+        {imageFilenames.map((filename, index) => (
+          <div className="carousel-image" key={index}>
+            <img
+              className="d-block carousel-image"
+              src={`${process.env.PUBLIC_URL}/images/carousel/${filename}`}
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        ))}
       </Carousel>
     </div>
   );
