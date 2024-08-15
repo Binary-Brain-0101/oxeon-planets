@@ -2,7 +2,7 @@
 
 .navbar {
   border-bottom: 1px solid #e3f2fd;
-  background-color: #fafdff;
+  background-color: #0b0031;
 }
 
 .navbar-brand {
@@ -28,6 +28,8 @@
 .navbar-heading{
   font-family: 'Montserrat Light Alt1', sans-serif;
   font-weight: 900;
+  margin-right: 10%;
+  color: #ffc99c;
 }
 
 .scroll-loader {
@@ -35,6 +37,6 @@
   bottom: 0;
   left: 0;
   height: 7px;
-  background-color: #0f1e7f; 
+  background-color: #ffc99c; 
   transition: width 0.2s ease-out;
 }

@@ -30,7 +30,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-md navbar-light fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
-                        <img src={"/images/LogoBlue.png"} alt="Hello-World" height="60px" />
+                        <img src={"/images/LogoGold.png"} alt="Hello-World" height="60px" />
                     </a>
                     <h1 className="navbar-heading">HELLO-WORLD</h1>
                     {/* <button
