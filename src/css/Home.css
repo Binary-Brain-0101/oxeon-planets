@@ -1,0 +1,22 @@
+
+.home-h1 {
+  font-size: 3rem;
+  font-family: 'Montserrat Light Alt1', sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #0b0031;
+
+}
+/* 
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #1f4888;
+} */
+
+.home-para {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}

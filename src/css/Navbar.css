@@ -1,0 +1,40 @@
+
+
+.navbar {
+  border-bottom: 1px solid #e3f2fd;
+  background-color: #fafdff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #0a0202;
+}
+
+.navbar-nav {
+  list-style: none;
+  /* margin-bottom: 2rem; */
+  padding-left: 0;
+}
+
+.nav-item {
+  margin-bottom: 1rem;
+}
+
+.navbar-heading{
+  font-family: 'Montserrat Light Alt1', sans-serif;
+  font-weight: 900;
+}
+
+.scroll-loader {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7px;
+  background-color: #0f1e7f; 
+  transition: width 0.2s ease-out;
+}
