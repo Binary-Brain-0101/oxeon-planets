@@ -36,7 +36,7 @@ const Footer = () => {
     openModal(
       "/images/hw_insta.jpg",
       "Follow us on Instagram",
-      "https://instagram.com/your-profile"
+      "https://www.instagram.com/helloworld.solutions?igsh=NTd0ODV2aGJ0c2Z3"
     );
   };
 
@@ -45,7 +45,7 @@ const Footer = () => {
     openModal(
       "/images/whatsapp.jpg",
       "Contact us on WhatsApp",
-      "https://wa.me/your-number"
+      "https://wa.me/message/5EYKZPK4KEUSK1"
     );
   };
 
