@@ -158,12 +158,12 @@ const CCTVFormModal = ({ isOpen, onClose }) => {
   };
 
   useEffect(() => {
-    if (formData.recorderType === "NVR") {
-      setChannelOptions(options.nvrChannels);
+    if (formData.recorderType === 'NVR') {
+        setChannelOptions(options.nvrChannels);
     } else {
-      setChannelOptions(options.allChannels);
+        setChannelOptions(options.allChannels);
     }
-  }, [formData.recorderType]);
+}, [formData.recorderType, options.allChannels, options.nvrChannels]);
 
   return (
     <Modal
