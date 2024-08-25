@@ -5,3 +5,12 @@
     font-weight: 300;
     font-style: normal;
   }
+ 
+  html, body {
+     overflow-x: hidden;
+   }
+   
+   * {
+     box-sizing: border-box;
+   }
+   

@@ -58,7 +58,7 @@ const Footer = () => {
             <p>Hello-World</p>
             <p>www.hello-world.solutions</p>
             <p>helloworldsolutions2024@gmail.com</p>
-            <p>+91 9072581421, +91 8075749351</p>
+            <p>+91 9072581421, +91 6238101322</p>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Addresses</h5>
@@ -97,7 +97,7 @@ const Footer = () => {
               </div>
               <div className="p-2">
                 <img
-                  src={"/images/LogoGold.png"}
+                  src={"/images/LogoWhite.png"}
                   alt="Hello-world"
                   width={"60%"}
                   style={{ backgroundColor: "transparent" }}

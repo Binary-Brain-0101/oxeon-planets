@@ -19,16 +19,11 @@ const MainCarousel = () => {
     },
   };
 
-  // Array of image filenames (from the public/images/carousel directory)
   const imageFilenames = [
     "2.jpg",
     "3.jpg",
     "5.jpg",
     "6.jpg"
-    // "hw_bio.jpg",
-    // "hw_cctv.jpg",
-    // "hw_web.jpg",
-    // "hw_cctv1.jpg"
   ];
 
   return (

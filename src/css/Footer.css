@@ -1,105 +1,162 @@
+/* Modal Styling */
 .modal-footer {
-    position: relative;
-    padding: 0;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    width: auto; /* Adjust width based on content */
-    max-width: 50%; /* Set a maximum width to match the image width */
-    max-height: auto; /* Height adjusts based on image and button */
+  position: relative;
+  padding: 20px; /* Added padding for better spacing on mobile */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  width: 90%; /* Adjust width for better responsiveness */
+  max-width: 500px; /* Set a maximum width */
+  max-height: 80%; /* Height adjusts based on image and button */
+  background-color: #ffffff; /* Ensures modal content is always visible */
+}
+
+.modal-overlay-footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Adds padding around modal on small screens */
+}
+
+.modal-close-button-footer {
+  position: absolute;
+  top: 8px;
+  right: 8px; /* Adjusted for better alignment */
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1; /* Ensure button is above the image */
+}
+
+.modal-image-footer {
+  width: 100%; /* Image takes full width of modal */
+  height: auto;
+  border-radius: 8px; /* Add border-radius for a smoother look */
+}
+
+.social-media-buttons {
+  font-size: 30px;
+}
+
+.text-center {
+  text-align: center; /* Center align text and button */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 15px; /* Space between image and button */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #0b0031;
+  color: #e7e2e2;
+  padding: 20px 0; /* Added padding for spacing */
+}
+
+footer h5 {
+  color: #f5f2f2;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+footer a {
+  color: #f1eded;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .p-3 {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fbf6f6;
+}
+
+.social-media-buttons i {
+  font-size: 24px; /* Adjust icon size */
+  color: #ffffff; /* Ensures visibility on dark background */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .modal-footer {
+      width: 90%; /* Increase width on smaller screens */
+      max-width: 90%; /* Ensure modal width is responsive */
+      max-height: 80%; /* Ensure height is responsive */
   }
-  
-  .modal-overlay-footer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .modal-close-button-footer {
-    position: absolute;
-    top: 8px;
-    right: 28%; /* Adjusted to align with image */
-    border: none;
-    background: transparent;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1; /* Ensure button is above the image */
-  }
-  
+
   .modal-image-footer {
-    width: 50%; /* Image width as specified */
-    height: auto;
+      width: 100%; /* Adjust image width for smaller screens */
   }
-  
-  .social-media-buttons{
-    font-size: 30px;
+
+  .modal-close-button-footer {
+      right: 8px; /* Ensure close button is properly aligned */
   }
-  .text-center {
-    text-align: center; /* Center align text and button */
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 15px; /* Space between image and button */
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
 
   footer {
-    background-color: #0b0031;
-    color: #e7e2e2;
+      padding: 15px; /* Reduce padding on smaller screens */
   }
-  
+
   footer h5 {
-    color: #f5f2f2;
+      font-size: 18px; /* Adjust heading size for mobile */
   }
-  
+
   footer p {
-    color: #ffffff;
+      font-size: 14px; /* Adjust paragraph size for mobile */
   }
-  
-  footer a {
-    color: #f1eded;
-    text-decoration: none;
+
+  .social-media-buttons i {
+      font-size: 20px; /* Adjust icon size for mobile */
   }
-  
-  footer a:hover {
-    color: #fff;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .modal-footer {
+      padding: 10px; /* Reduce padding on extra small screens */
   }
-  
-  footer .p-3 {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fbf6f6;
+
+  .modal-image-footer {
+      width: 100%; /* Ensure image takes full width */
   }
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .modal-footer {
-      max-width: 90%; /* Increase width on smaller screens */
-      max-height: auto; /* Allow height to grow based on content */
-    }
-  
-    .modal-image-footer {
-      width: 80%; /* Adjust image width for smaller screens */
-    }
-    .modal-close-button-footer {
-    right:12%;
-    }
+
+  .btn-primary {
+      width: 100%; /* Button takes full width on small screens */
+      text-align: center; /* Center align text in button */
   }
-  
+
+  footer h5 {
+      font-size: 16px; /* Adjust heading size for extra small screens */
+  }
+
+  footer p {
+      font-size: 12px; /* Adjust paragraph size for extra small screens */
+  }
+
+  .social-media-buttons i {
+      font-size: 18px; /* Adjust icon size for extra small screens */
+  }
+}
