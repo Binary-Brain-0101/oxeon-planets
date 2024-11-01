@@ -5,14 +5,9 @@ function Home() {
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <h1 className="text-center home-h1">Welcome to HELLO-WORLD</h1>
+                    <h1 className="text-center home-h1">Welcome to OXEON PLANETS</h1>
                     <p style={{textAlign: "justify"}} className="home-para">
-                    Introducing Hello-World: Your Trusted Partner for Web Development, CCTV Security, Biometrics, and Automation
-                    Hello-World is your go-to provider for web development, CCTV security, biometrics, and automation solutions. 
-                    We offer tailored, high-quality services to meet your unique needs.Whether you need a dynamic website, secure 
-                    premises, or streamlined operations, our experienced team delivers innovative, reliable, and cost-effective solutions. 
-                    With a strong reputation in the industry, Hello-World is committed to exceeding expectations and ensuring your
-                    success in today’s digital and connected world.
+                    Oxeon Planets is your premier partner for comprehensive solutions in web development, CCTV security, biometrics, and automation. We provide tailored, high-quality services designed to meet the unique requirements of your business, ensuring seamless integration and maximum impact. Our dedicated team of skilled professionals delivers innovative, reliable, and cost-effective results that prioritize security, efficiency, and functionality. With a strong reputation built on excellence and a commitment to exceeding client expectations, Oxeon Planets empowers businesses to thrive in today’s fast-paced, digital, and interconnected world.
                     </p>
                 </div>
             </div>

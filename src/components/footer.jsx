@@ -36,7 +36,7 @@ const Footer = () => {
     openModal(
       "/images/hw_insta.jpg",
       "Follow us on Instagram",
-      "https://www.instagram.com/helloworld.solutions?igsh=NTd0ODV2aGJ0c2Z3"
+      // "https://www.instagram.com/helloworld.solutions?igsh=NTd0ODV2aGJ0c2Z3"
     );
   };
 
@@ -45,7 +45,7 @@ const Footer = () => {
     openModal(
       "/images/whatsapp.jpg",
       "Contact us on WhatsApp",
-      "https://wa.me/message/5EYKZPK4KEUSK1"
+      // "https://wa.me/message/5EYKZPK4KEUSK1"
     );
   };
 
@@ -55,16 +55,17 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Company Details</h5>
-            <p>Hello-World</p>
-            <p>www.hello-world.solutions</p>
-            <p>helloworldsolutions2024@gmail.com</p>
-            <p>+91 9072581421, +91 6238101322</p>
+            <p>Oxeon Planets</p>
+            <p>www.oxeonplanets.com</p>
+            <p>oxeonplanets@gmail.com</p>
+            <p>+91 6366611286</p>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Addresses</h5>
-            <p>Hello-world</p>
-            <p>60/44, 3rd floor, JC Chambers</p>
-            <p>Eranakulam-682036, Kerala</p>
+            <p>Oxeon Planets</p>
+            <p>#12, 9th Cross, Tank Bund Road</p>
+            <p>Bismillah Nagar</p>
+            <p>Bangalore - 560029, Karnataka</p>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Social</h5>
@@ -97,7 +98,7 @@ const Footer = () => {
               </div>
               <div className="p-2">
                 <img
-                  src={"/images/LogoWhite.png"}
+                  src={"/images/Logo_thick_white.png"}
                   alt="Hello-world"
                   width={"60%"}
                   style={{ backgroundColor: "transparent" }}
@@ -111,7 +112,7 @@ const Footer = () => {
         className="text-center p-3"
 
       >
-        &copy; {new Date().getFullYear()} hello-world. All rights reserved.
+        &copy; {new Date().getFullYear()} oxeon planets. All rights reserved.
       </div>
 
       <Modal

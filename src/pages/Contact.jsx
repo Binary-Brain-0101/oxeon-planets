@@ -107,10 +107,10 @@ const Contact = () => {
         </form>
         {status && <p>{status}</p>}
       </div>
-      <div className="contact-logo">
+      {/* <div className="contact-logo">
         <img src="/images/LogoBlue.png" alt="Logo" />
         <h1 className="contact-h1">HELLO-WORLD</h1>
-      </div>
+      </div> */}
     </div>
   );
 };

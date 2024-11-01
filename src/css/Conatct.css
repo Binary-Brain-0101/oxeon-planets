@@ -64,14 +64,14 @@
     padding: 8px; /* Reduced padding */
     border-radius: 5px;
     font-weight: bold;
-    background-color: #0b0031;
+    background-color: #254785;
     color: #ffffff;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .contact-container .submit-button:hover {
-    background-color: #83b300;
+    background-color: #6ab655 ;
     transform: translateY(-2px);
   }
   
