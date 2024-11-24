@@ -100,6 +100,10 @@ footer .p-3 {
   color: #ffffff; /* Ensures visibility on dark background */
 }
 
+.modal-image-footer {
+  width: 50%; /* Adjust image width for smaller screens */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .modal-footer {
@@ -109,7 +113,7 @@ footer .p-3 {
   }
 
   .modal-image-footer {
-      width: 100%; /* Adjust image width for smaller screens */
+      width: 50%; /* Adjust image width for smaller screens */
   }
 
   .modal-close-button-footer {
@@ -140,7 +144,7 @@ footer .p-3 {
   }
 
   .modal-image-footer {
-      width: 100%; /* Ensure image takes full width */
+      width: 50%; /* Ensure image takes full width */
   }
 
   .btn-primary {

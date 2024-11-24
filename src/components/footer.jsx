@@ -21,20 +21,19 @@ const Footer = () => {
 
   const closeModal = () => setModalIsOpen(false);
 
-  // Handlers for social media clicks
-  // const handleFacebookClick = (e) => {
-  //   e.preventDefault();
-  //   openModal(
-  //     "/images/hw_insta.jpg",
-  //     "Follow us on Facebook",
-  //     "https://facebook.com/your-page"
-  //   );
-  // };
+  const handleFacebookClick = (e) => {
+    e.preventDefault();
+    openModal(
+      "/images/coming-soon.png",
+      "Follow us on Facebook",
+      // "https://facebook.com/your-page"
+    );
+  };
 
   const handleInstagramClick = (e) => {
     e.preventDefault();
     openModal(
-      "/images/hw_insta.jpg",
+      "/images/coming-soon.png",
       "Follow us on Instagram",
       // "https://www.instagram.com/helloworld.solutions?igsh=NTd0ODV2aGJ0c2Z3"
     );
@@ -43,12 +42,19 @@ const Footer = () => {
   const handleWhatsAppClick = (e) => {
     e.preventDefault();
     openModal(
-      "/images/whatsapp.jpg",
+      "/images/coming-soon.png",
       "Contact us on WhatsApp",
       // "https://wa.me/message/5EYKZPK4KEUSK1"
     );
   };
-
+  const handleTwitterClick = (e) => {
+    e.preventDefault();
+    openModal(
+      "/images/coming-soon.png",
+      "Connect with us on twitter",
+      // "https://wa.me/message/5EYKZPK4KEUSK1"
+    );
+  };
   return (
     <footer className="text-center text-lg-start">
       <div className="container p-4">
@@ -58,7 +64,7 @@ const Footer = () => {
             <p>Oxeon Planets</p>
             <p>www.oxeonplanets.com</p>
             <p>oxeonplanets@gmail.com</p>
-            <p>+91 6366611286</p>
+            <p>+91 9744196930</p>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 className="text-uppercase">Addresses</h5>
@@ -81,7 +87,7 @@ const Footer = () => {
                       <i className="fab fa-facebook-f"></i>
                     </a>
                   </li> */}
-                  <li className="list-inline-item pe-2">
+                  <li className="list-inline-item pe-3">
                     <a
                       href="/"
                       onClick={handleInstagramClick}
@@ -89,9 +95,19 @@ const Footer = () => {
                       <i className="fab fa-instagram"></i>
                     </a>
                   </li>
-                  <li className="list-inline-item pe-2">
+                  <li className="list-inline-item pe-3">
                     <a href="/" onClick={handleWhatsAppClick}>
                       <i className="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li className="list-inline-item pe-3">
+                    <a href="/" onClick={handleFacebookClick}>
+                      <i className="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li className="list-inline-item pe-3">
+                    <a href="/" onClick={handleTwitterClick}>
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                 </ul>
@@ -99,7 +115,7 @@ const Footer = () => {
               <div className="p-2">
                 <img
                   src={"/images/Logo_thick_white.png"}
-                  alt="Hello-world"
+                  alt="Oxeon Planets"
                   width={"60%"}
                   style={{ backgroundColor: "transparent" }}
                 />
