@@ -1,7 +1,18 @@
-
-
 .navbar {
+  background-color: #040f41;
+  position: relative; /* Make the navbar the reference point for positioning */
   border-bottom: 1px solid #e3f2fd;
+  z-index: 10; /* Ensure it stays above the snowfall canvas */
+}
+
+.snowfall-container {
+  position: absolute; /* Layer the snowfall over the navbar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure clicks pass through to navbar elements */
+  z-index: -1; /* Ensure the snowfall stays behind navbar content */
 }
 
 .navbar-brand {
@@ -9,22 +20,31 @@
   font-weight: bold;
 }
 
+.navbar-brand img{
+  height: 80px;
+}
+
 .nav-link {
   font-size: 1.2rem;
   color: #0a0202;
 }
 
-/* .navbar-nav {
-  list-style: none;
-  padding-left: 0;
-} */
 
-
-.navbar-heading{
-  font-family: 'Montserrat Light Alt1', sans-serif;
-  font-weight: 900;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  color: #ffc99c;
+.navbar img.navbar-gif {
+  height: 30%; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: 20px;
 }
 
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .navbar img.navbar-gif {
+    display: flex;
+    height: 100px; 
+    justify-content: center;
+    
+  }
+  .navbar-brand img{
+    height: 100px;
+  }
+}
